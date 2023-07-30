@@ -3,14 +3,16 @@ import BotCard from "./BotCard";
 
 function YourBotArmy({bots, handleClick, handleDelete}) {
   const displayCards=bots.map(bot=>{
-    return<BotCard key={bot.id} 
+    return<BotCard 
+    key={bot.id} 
     bot={bot}
     handleClick={handleClick}
-    handleDelete={handleDelete}
+    handleDelete={handleDelete(bot.id)}
     />})
 
   return (
     <div className="">
+        <h2>YourBotArmy</h2>
       <div className="ui five column grid">
         <div className="row bot-army-row">
         
