@@ -1,5 +1,99 @@
-body {
+/* App Component */
+.App {
+  background-color: brown;
+  font-family: Arial, sans-serif;
+  color: whitesmoke;
+  padding: 16px;
+}
+
+/* BotCard Component */
+.BotCard {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 260px
+}
+
+.BotCard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.BotCard h3 {
+  font-size: 18px;
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  margin-bottom: 8px;
+}
+
+.BotCard p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.BotCard .btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.BotCard button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background: red;
+}
+
+.BotCard .btn-delete {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.BotCard .btn-add {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.YourBotArmy {
+  margin-bottom: 32px;
+  background: #777;
+  border-radius: 5px;
+}
+
+.YourBotArmy h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.bot-army-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.BotCollection {
+  margin-bottom: 32px;
+}
+
+.BotCollection .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.BotsPage {
+  padding: 16px;
+}
+
+.BotsPage h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
 }

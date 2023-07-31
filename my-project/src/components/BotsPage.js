@@ -1,4 +1,5 @@
-import React, {useEffect, useState} from "react";
+import React, { useState, useEffect} from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import YourBotArmy from "./YourBotArmy";
 import BotCollection from "./BotCollection";
 function BotsPage() {
